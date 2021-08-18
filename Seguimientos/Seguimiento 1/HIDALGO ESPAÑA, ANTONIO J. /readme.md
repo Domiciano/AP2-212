@@ -30,10 +30,10 @@ Haga un push. Para esto realice:
 ```
 git add .
 git commit -m "Entrega"
-git push origin master
+git push origin seguimientoX
 ```
 
-### Paseo 7
+### Paso 7
 Haga un pull request. Esto se hace en la página. El pull debe ser
 ```
 master <- seguimientoX
