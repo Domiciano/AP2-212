@@ -20,7 +20,7 @@ public class SignInWindow extends Stage
 	{
 		try
 		{
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("signInWindow.FXML"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("SignInWindow.FXML"));
 			Parent root = loader.load();
 			
 			signUpBtn = (Button) loader.getNamespace().get("signUpBtn");
@@ -43,7 +43,10 @@ public class SignInWindow extends Stage
 	{
 		signUpBtn.setOnAction(event->
 		{
-			
+			CreateAccWindow createAcc = new CreateAccWindow();
+			Stage stage = (Stage) signUpBtn.getScene().getWindow();
+			createAcc.show();
+			stage.close();
 		});
 		logInBtn.setOnAction(event->
 		{
