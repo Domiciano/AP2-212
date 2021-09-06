@@ -44,9 +44,8 @@ public class SignInWindow extends Stage
 		signUpBtn.setOnAction(event->
 		{
 			CreateAccWindow createAcc = new CreateAccWindow();
-			Stage stage = (Stage) signUpBtn.getScene().getWindow();
 			createAcc.show();
-			stage.close();
+			this.close();
 		});
 		logInBtn.setOnAction(event->
 		{
