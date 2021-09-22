@@ -28,7 +28,7 @@ public class Main {
 
 		System.out.println("-----------------------------------------");
 
-		binarySearch(array, 38);
+		binarySearch(array, -22);
 	}
 
 	public static void binarySearch(ArrayList<Integer> array, int find) {
